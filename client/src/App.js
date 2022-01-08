@@ -9,6 +9,7 @@ import {format} from 'timeago.js';
 import Register from "./components/Register";
 import Login from "./components/Login";
 import ReactPaginate from 'react-paginate'
+import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
