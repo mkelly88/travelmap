@@ -12,7 +12,7 @@ app.use(express.json())
 
 
 mongoose
-.connect(process.env.MONGO_URL, {
+.connect(process.env.MONGODB_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true, })
     .then(() => console.log("MongoDB Connected"))
