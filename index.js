@@ -10,9 +10,11 @@ dotenv.config();
 
 app.use(express.json())
 
+var uri= "mongodb+srv://mak455:iqPc2lOzrOUoZiX0@cluster0.xtbqr.mongodb.net/Travel-Log?retryWrites=true&w=majority"
+
 
 mongoose
-.connect(process.env.MONGODB_CONNECTION_STRING, {
+.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true, })
     .then(() => console.log("MongoDB Connected"))
